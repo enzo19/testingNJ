@@ -11,10 +11,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Name:"
         android:id="@+id/textView"
+        android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="84dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,16 +51,26 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/saveBtn"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="27dp"
         android:layout_below="@+id/jobTxt"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="List"
         android:id="@+id/listBtn"
+        android:layout_marginTop="23dp"
         android:layout_below="@+id/saveBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignTop="@+id/saveBtn"
+        android:layout_toRightOf="@+id/saveBtn"
+        android:layout_toEndOf="@+id/saveBtn" />
 </RelativeLayout>
